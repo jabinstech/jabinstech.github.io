@@ -1,1 +1,0 @@
-# jabinstech.github.io
