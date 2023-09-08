@@ -1,5 +1,5 @@
 remote_theme: pages-themes/midnight@v0.2.0
 title: Jabin's Tech
-description: Welcome to Jabin's Tech's alternate website (jabinstech.github.io)
+description: [My PC](/mypc) | [jabinstech.net](https://jabinstech.net/)
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
