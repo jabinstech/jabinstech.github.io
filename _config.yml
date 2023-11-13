@@ -1,5 +1,5 @@
 remote_theme: pages-themes/midnight@v0.2.0
-title: Jabin's Tech (github)
-description: Random stuff.
+title: Jabin's Tech (github.io)
+description: one of the many places i host things and put things
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
