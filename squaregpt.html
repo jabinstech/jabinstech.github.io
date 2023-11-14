@@ -127,7 +127,9 @@
     // Get the blue square element and score element
     const blueSquare = document.getElementById('blue-square');
     const scoreElement = document.getElementById('score-value');
-    const additionalContent = document.getElementById('additional-content');
+
+    // Initialize score and color change threshold
+    let score = 0;
 
     // Function to handle the click event
     function handleClick() {
