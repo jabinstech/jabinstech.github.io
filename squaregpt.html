@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquareGPT</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: url('bodybg.jpg') center/cover; /* Replace 'body-background-image.jpg' with the path to your body background image */
+            font-family: 'Courier New', monospace;
+        }
+
+        #game-container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            border: 1px solid #000;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #blue-square {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: lightblue;
+            cursor: pointer;
+        }
+
+        #score {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+            color: rgb(255, 255, 255);
+            font-family: 'Courier New', monospace;
+        }
+
+        #title {
+            text-align: center;
+            font-size: 74px;
+            margin-top: 30px;
+            color: rgb(255, 255, 255);
+            font-family: 'Courier New', monospace;
+        }
+        
+        #desc {
+            text-align: center;
+            font-size: 14;
+            color: rgb(255, 255, 255);
+            font-family: 'Courier New', monospace;
+        }
+
+        #nav {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 20px;
+            color: rgb(255, 255, 255);
+            font-family: 'Courier New', monospace;
+        }
+
+        a:link {
+            color: rgb(255, 255, 255);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(255, 255, 255);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(169, 209, 255);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        #additional-section {
+            margin-top: 20px;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            font-family: 'Courier New', monospace;
+        }
+
+        #additional-content {
+            display: none;
+            margin-top: 10px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-family: 'Courier New', monospace;
+        }    
+    </style>
+</head>
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0" nonce="0CwE5e6m"></script>
+
+<div id="title">SquareGPT</div>
+<div id="desc">A basic game made by ChatGPT</div>
+<div id="nav"><a href="https://jabinstech.github.io">Home</a> | <a href="https://jabinstech.github.io/gptgames">More Stuff</a></div>
+
+<div id="score"><strong>Score: <span id="score-value">0</span></strong></div>
+<div id="game-container">
+    <div id="blue-square"></div>
+</div>
+
+<div id="additional-section" onclick="toggleAdditionalContent()">
+    Share ⇓
+</div>
+
+<div id="additional-content">
+    <p>    
+        <a target="_blank" href="https://www.reddit.com/submit?url=https%3A%2F%2Fjabinstech.github.io%2Fsquaregpt&title=Square%20game%20made%20by%20ChatGPT">Reddit</a><br>
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjabinstech.github.io%2Fsquaregpt&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Facebook</a><br>
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=Square%20game%20made%20by%20ChatGPT&url=https%3A%2F%2Fjabinstech.github.io%2Fsquaregpt">X (Twitter)</a>
+    </p>
+</div>
+
+<script>
+    // Get the blue square element and score element
+    const blueSquare = document.getElementById('blue-square');
+    const scoreElement = document.getElementById('score-value');
+    const additionalContent = document.getElementById('additional-content');
+
+    // Function to handle the click event
+    function handleClick() {
+        // Increase the score
+        score++;
+        // Update the score display
+        scoreElement.textContent = score;
+
+        // Generate random position within the game container
+        const maxX = document.getElementById('game-container').offsetWidth - blueSquare.offsetWidth;
+        const maxY = document.getElementById('game-container').offsetHeight - blueSquare.offsetHeight;
+
+        const randomX = Math.floor(Math.random() * maxX);
+        const randomY = Math.floor(Math.random() * maxY);
+
+        // Set the new position
+        blueSquare.style.left = `${randomX}px`;
+        blueSquare.style.top = `${randomY}px`;
+    }
+
+    // Function to toggle additional content
+    function toggleAdditionalContent() {
+        additionalContent.style.display = (additionalContent.style.display === 'none' || additionalContent.style.display === '') ? 'block' : 'none';
+    }
+
+    // Add click event listener to the blue square
+    blueSquare.addEventListener('click', handleClick);
+</script>
+
+</body>
+</html>
