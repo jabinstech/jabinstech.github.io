@@ -6,3 +6,5 @@ This is one of my websites. There are "activities" and other random things.
 * [Slope](https://jabinstech.github.io/yex-games/slope)
 * [SquareGPT](https://jabinstech.github.io/squaregpt)
 * [Is it a waste of money?](https://jabinstech.github.io/is.wasteof.fork)
+### My Computer
+[View my computer](https://jabinstech.github.io/mypc)
