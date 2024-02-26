@@ -1,6 +1,7 @@
 # Hello!
-This is a very cool website and it is mine and I exist.
-### Links
+This is one of my websites. There are "activities" and other random things.
+### Activities
+* [Tetris (new!)](https://jabinstech.github.io/tetris)
 * [Vex 6](https://jabinstech.github.io/vex-6)
 * [Slope](https://jabinstech.github.io/yex-games/slope)
 * [SquareGPT](https://jabinstech.github.io/squaregpt)
