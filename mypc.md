@@ -11,12 +11,12 @@
 
 ### Software:
 
-* Dual-booting Windows 11 + ElementaryOS 7.1
+* Windows 11
+* Edge
 * Firefox
-* GNOME Web (Epiphany)
 * Spotify (with Spicetify)
 * Steam
-* Badlion Client
-* Regular MC Launcher
-* Roblox (grapejuice)
-* Oracle VM Virtualbox
+* Minecraft
+* Roblox
+* Virtualbox
+* VMWare
