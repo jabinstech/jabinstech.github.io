@@ -2,21 +2,12 @@
 
 ### PC:
 
-* HP Pavilion Gaming Laptop (2022)
-* 24GB DDR4-3200 SODIMM RAM
-* AMD Ryzen 5 5600H with Radeon Graphics (6 cores, 12 threads)
-* NVIDIA GeForce GTX 1650
-* 1x 512GB NVMe SSD
-* 1x 512GB Laptop HDD for storage
-
-### Software:
-
-* Windows 11
-* Edge
-* Firefox
-* Spotify (with Spicetify)
-* Steam
-* Minecraft
-* Roblox
-* Virtualbox
-* VMWare
+* Custom Built
+* ASUS ROG STRIX x670E-E motherboard
+* 32GB DDR5-6000 g.skill RAM
+* AMD Ryzen 7 7800X3D
+* NVIDIA GeForce RTX 4060 (8GB)
+* 2TB NVMe SSD
+* Deepcool LS720 SE (RIP)
+* Deepcool CH560 Airflow Mid-tower ATX case
+* PowerSpec 850W Modular PSU
